@@ -21,7 +21,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  min-width: 310px;
+  min-width: 400px;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -196,7 +196,6 @@ header .side_nav {
 main{
   display: flex;
   height: calc(100% - 90px);
-
 }
 
 main .container {
@@ -612,7 +611,8 @@ section.player {
 }
 
 @media screen and (max-width: 600px) {
-  main .side_nav {
+  
+  header .side_nav {
     width: 50px;
     padding: 10px;
   }
@@ -623,6 +623,7 @@ section.player {
   
   .nav_logo .logo_small {
     display: block;
+    width: 100%;
   }
 
   .nav_logo .logo_small a img{
@@ -663,11 +664,11 @@ section.player {
   }
   
   main .container {
-    width: calc(100% - 50px);
+    width: calc(100% - 0px);
   }
   
   main .container .call_to_action {
-    width: calc(100% - 50px);
+    width: calc(100% - 0px);
   }
   
   .call_to_action {
@@ -693,6 +694,11 @@ section.player {
   .player .controller .player_button ul li {
     padding: 0 5px;
   }
+
+  .nav_add_playlist,
+  .nav_name_playlist{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -702,7 +708,7 @@ section.player {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
   .player_time .time_go {
     font-size: 10px;
     padding-right: 10px;
@@ -739,6 +745,7 @@ section.player {
   .player .song .song_name p {
     font-size: 9px;
   }
+  
 }
 
 @media screen and (max-width: 860px) {
